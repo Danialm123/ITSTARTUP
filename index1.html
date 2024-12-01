@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+</body>
+</html>
+    
+<script>
+
+  localStorage.setItem('sharedData', 'Это общие данные');
+</script>
+
+
+<body>
+<style>
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("./gl.jpg");
+    background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat;
+  height: 100vh; 
+}
+
+#loginForm, #registrationForm {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2; 
+}
+
+#loginForm, #registrationForm {
+  text-align: center;
+  width: 300px;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white; 
+}
+
+input[type="text"],
+input[type="password"] {
+  width: calc(100% - 20px);
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  color: black;
+}
+
+a {
+  color: aquamarine;
+}
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+nav ul li {
+  margin: 0 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: rgb(19, 230, 160);
+  border: 1px solid #ccc; 
+  padding: 8px 12px;
+  border-radius: 5px;
+}
+
+nav ul li a:hover {
+  background-color: #1a0707; 
+}
+
+.language {
+  display: flex;
+}
+
+header {
+  background-color: #0100019f;
+          color: #420d0d;
+          padding: 10px;
+          text-align: center;
+        }
+
+
+
+
+
+</style>
+
+<title>Login Page</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<header>
+<nav>
+  
+</nav>
+</header>
+<body>
+  <center>
+  
+  <div id="registrationForm" style="display: none;">
+    <h2>Регистрация</h2>
+    <label for="regUsername">Имя пользователя:</label>
+    <input type="text" id="regUsername" required><br><br>
+    <label for="regPassword">Пароль:</label>
+    <input type="password" id="regPassword" required><br><br>
+    <button onclick="register()">Зарегистрироваться</button>
+    <p>Уже есть аккаунт? <a href="index.html" onclick="toggleForms()">Войдите</a></p>
+  </div>
+
+ 
+  <div id="loginForm">
+    <h2>Вход</h2>
+    <label for="loginUsername">Имя пользователя:</label>
+    <input type="text" id="loginUsername" required><br><br>
+    <label for="loginPassword">Пароль:</label>
+    <input type="password" id="loginPassword" required><br><br>
+    <button onclick="login()">Войти</button>
+    <p>Нет аккаунта? <a href="#" onclick="toggleForms()">Зарегистрироваться</a></p>
+  </div>
+
+  <script src="script1.js"></script>
+  </center>
+  <script src="./script1.js"></script>
+
+
+<body>
+
+</body>
+
+</html>
